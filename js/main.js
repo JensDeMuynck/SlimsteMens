@@ -1,0 +1,40 @@
+console.log('hello world')
+
+var firebaseConfig = {
+  apiKey: "AIzaSyCpGmPodLxoeFLh6Tz777qo_laPrlFjk68",
+  authDomain: "slimste-mens-fb04e.firebaseapp.com",
+  databaseURL: "https://slimste-mens-fb04e.firebaseio.com",
+  projectId: "slimste-mens-fb04e",
+  storageBucket: "slimste-mens-fb04e.appspot.com",
+  messagingSenderId: "424441270671",
+  appId: "1:424441270671:web:39e91bc6052ac1935abbfa",
+  measurementId: "G-XDPXY9C1VN"
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+let db = firebase.database();
+
+document.getElementById('names').addEventListener('click', function(){
+  let teamOne = document.getElementById('teamOne').value;
+  let teamTwo = document.getElementById('teamTwo').value;
+  let teamTree = document.getElementById('teamTree').value;
+  db.ref('teams/teamOne').set({
+    name: teamOne,
+    points: 60
+  })
+  db.ref('teams/teamTwo').set({
+    name: teamTwo,
+    points: 60
+  })
+  db.ref('teams/teamTree').set({
+    name: teamTree,
+    points: 60
+  })
+  db.ref('state').set(true)
+  // console.log(document.getElementById('labelTeamOne').innerHTML)
+  document.getElementById('labelTeamOne').innerHTML = teamOne;
+  document.getElementById('labelTeamTwo').innerHTML = teamTwo;
+  document.getElementById('labelTeamTree').innerHTML = teamTree;
+
+})
