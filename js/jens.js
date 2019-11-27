@@ -15,5 +15,5 @@ let countdownButton = document.getElementById('count-down');
 let slider = document.getElementById('slider');
 countdownButton.addEventListener('click', function () {
     slider.classList.toggle('is-visible');
-    countdownButton.classList.toggle('active');
+    countdownButton.classList.toggle('active')
 });

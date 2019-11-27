@@ -15,7 +15,7 @@ firebase.analytics();
 
 let db = firebase.database();
 
-document.getElementById('names').addEventListener('click', function(){
+document.getElementById('names').addEventListener('click', function () {
   let teamOne = document.getElementById('teamOne').value;
   let teamTwo = document.getElementById('teamTwo').value;
   let teamTree = document.getElementById('teamTree').value;
@@ -36,5 +36,39 @@ document.getElementById('names').addEventListener('click', function(){
   document.getElementById('labelTeamOne').innerHTML = teamOne;
   document.getElementById('labelTeamTwo').innerHTML = teamTwo;
   document.getElementById('labelTeamTree').innerHTML = teamTree;
+
+  let points = db.ref('teams');
+  points.on('value', function (snapshot) {
+    document.getElementById('teamOneScore').innerHTML = snapshot.val().teamOne.points
+    document.getElementById('teamTwoScore').innerHTML = snapshot.val().teamTwo.points
+    document.getElementById('teamTreeScore').innerHTML = snapshot.val().teamTree.points
+  })
+  document.getElementById('nameBox').style.display = "none";
+})
+
+let number = 1;
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
+function countDown(active){
+  let state = active;
+  number = number +1
+  console.log(number)
+  console.log(state)
+}
+
+let active = false;
+document.getElementById('count-down').addEventListener('click', function () {
+  active = !active;
+
+  if (document.getElementById('one').checked == true) {
+    countDown(active);
+  }
 
 })

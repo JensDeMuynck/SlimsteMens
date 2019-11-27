@@ -18,7 +18,7 @@
         <a href="#" class="ronde">Ronde 4</a>
         <a href="#" class="ronde">Ronde 5</a>
     </div>
-    <div>
+    <div id="nameBox">
         <label>Team 1</label>
         <input id="teamOne" type="text" value="Anna">
         <label>Team 2</label>
@@ -27,21 +27,28 @@
         <input id="teamTree" type="text" value="Fe">
         <button id="names">Place names</button>
     </div>
+    <div>
+
+    </div>
     <div id="main-controls">
         <form>
             <div class="radiobtn">
+                <p id="teamOneScore"></p>
                 <input type="radio" id="one" name="drone" value="huey" checked />
-                <label id="labelTeamOne" for="huey">Huey</label>
+                <label id="labelTeamOne" for="one">Huey</label>
+
             </div>
 
             <div class="radiobtn">
+                <p id="teamTwoScore"></p>
                 <input type="radio" id="two" name="drone" value="dewey" />
-                <label id="labelTeamTwo" for="dewey">Dewey</label>
+                <label id="labelTeamTwo" for="two">Dewey</label>
             </div>
 
             <div class="radiobtn">
+                <p id="teamTreeScore"></p>
                 <input type="radio" id="tree" name="drone" value="louie" />
-                <label id="labelTeamTree" for="louie">Louie</label>
+                <label id="labelTeamTree" for="tree">Louie</label>
             </div>
         </form>
         <a href="#" id="count-down">COUNT DOWN TIME

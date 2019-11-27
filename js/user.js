@@ -15,7 +15,7 @@ firebase.analytics();
 
 function points() {
   let points = db.ref('teams');
-  points.on('value', function(snapshot) {
+  points.on('vasue', function(snapshot) {
     document.getElementById('teamOne').innerHTML = snapshot.val().teamOne.name
     document.getElementById('teamOneScore').innerHTML = snapshot.val().teamOne.points
     document.getElementById('teamTwo').innerHTML = snapshot.val().teamTwo.name
