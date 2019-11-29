@@ -1,3 +1,12 @@
+function showRound(round) {
+  console.log(round)
+  if(round == 'one') {
+    document.getElementById('drie-zes-negen').style.display = "block"
+  } else {
+    document.getElementById('drie-zes-negen').style.display = "none"
+  }
+}
+
 function points() {
   let points = db.ref('teams');
   points.on('value', function (snapshot) {
@@ -8,6 +17,14 @@ function points() {
     document.getElementById('teamTree').innerHTML = snapshot.val().teamTree.name
     document.getElementById('teamTreeScore').innerHTML = snapshot.val().teamTree.points
   })
+  
+  let round = db.ref('round');
+  round.on('value', function (snapshot) {
+    roundNumber = snapshot.val();
+    showRound(roundNumber);
+
+  })
+  console.log(round)
 }
 
 let state = db.ref('state');
