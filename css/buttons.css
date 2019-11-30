@@ -10,3 +10,7 @@
   height: 50px;
   color: transparent;
 }
+
+#roundTwoAssets, #roundThreePuzzels{
+  display: none;
+}

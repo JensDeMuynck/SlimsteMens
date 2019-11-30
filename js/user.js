@@ -10,6 +10,18 @@ function showRound(round) {
   } else {
     document.getElementById('content2').style.display = "none"
   }
+
+  if (round == "Three") {
+    document.getElementById('content3').style.display = "flex"
+  } else {
+    document.getElementById('content3').style.display = "none"
+  }
+
+  if (round == "Four") {
+    document.getElementById('content4').style.display = "flex"
+  } else {
+    document.getElementById('content4').style.display = "none"
+  }
 }
 
 function points() {

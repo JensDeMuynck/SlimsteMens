@@ -1,16 +1,25 @@
 function addRound(round){
   db.ref('round').set(round)
-  if(round == 'one') {
+  if(round == 'one' || round == 'Four') {
     document.getElementById('BtnOne').style.display = "block";
   }else {
     document.getElementById('BtnOne').style.display = "none";
   }
-  
-  
   if (round == 'Two') {
-    document.getElementById('Btn').style.display = "block";
-    
+    document.getElementById('BtnTwo').style.display = "block";
+    document.getElementById('roundTwoAssets').style.display = "block";
+  } else {
+    document.getElementById('BtnTwo').style.display = "none";
+    document.getElementById('roundTwoAssets').style.display = "none";
   }
+  if(round == 'Three') {
+    document.getElementById('BtnTree').style.display = "block";
+    document.getElementById('roundThreePuzzels').style.display = "block";
+  }else {
+    document.getElementById('BtnTree').style.display = "none";
+    document.getElementById('roundThreePuzzels').style.display = "none";
+  }
+ 
 };
 
 document.getElementById('RondeOne').addEventListener('click',function(){
