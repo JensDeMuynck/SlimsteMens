@@ -1,5 +1,3 @@
-console.log('hello world')
-
 var firebaseConfig = {
     apiKey: "AIzaSyCpGmPodLxoeFLh6Tz777qo_laPrlFjk68",
     authDomain: "slimste-mens-fb04e.firebaseapp.com",

@@ -9,17 +9,13 @@ function countDown(team) {
   points.on('value', function (snapshot) {
     counter = snapshot.val();
   })
-  console.log(team);
   if (active) {
-    console.log('starting...');
     interval = setInterval(() => {
       counter--;
       db.ref('teams/' + team + '/points').set(counter)
-      console.log(counter);
     }, 1000);
   } else {
     clearInterval(interval);
-    console.log('...stopped');
   }
 }
 

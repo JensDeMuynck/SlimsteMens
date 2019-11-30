@@ -1,5 +1,4 @@
 function showRound(round) {
-  console.log(round)
   if (round == 'one') {
     document.getElementById('content1').style.display = "flex"
   } else {
@@ -30,15 +29,12 @@ function points() {
     showRound(roundNumber);
 
   })
-  console.log(round)
 }
 
 function assets() {
   let asset = db.ref('assetsurlVideo');
-  console.log(asset)
   asset.on('value', function (snapshot) {
     let link = snapshot.val()
-    console.log(link)
     if (link != false) {
       document.getElementById('videoplay').innerHTML = `<video autoplay>
     <source src="${link}" type="video/mp4">
@@ -46,7 +42,6 @@ function assets() {
   </video>`
   link = snapshot.val()
     }else {
-      console.log('test')
       link = snapshot.val()
     }
 

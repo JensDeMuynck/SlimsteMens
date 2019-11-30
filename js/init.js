@@ -15,7 +15,6 @@ document.getElementById('names').addEventListener('click', function () {
         points: 60
     })
     db.ref('state').set(true)
-    // console.log(document.getElementById('labelTeamOne').innerHTML)
     document.getElementById('labelTeamOne').innerHTML = teamOne;
     document.getElementById('labelTeamTwo').innerHTML = teamTwo;
     document.getElementById('labelTeamTree').innerHTML = teamTree;

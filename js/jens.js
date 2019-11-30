@@ -1,4 +1,3 @@
-console.log("hello second world")
 let htmlCollection = document.getElementsByClassName('ronde');
 let rondes = [...htmlCollection];
 
