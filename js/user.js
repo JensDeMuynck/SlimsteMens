@@ -67,11 +67,13 @@ function assetImage(){
   assetimage.on('value', function (snapshot) {
     let link = snapshot.val()
     console.log(link)
+    console.log(link != 'false')
     if (link != 'false') {
       document.getElementById('fotoronde').innerHTML = `<img src="${link}">`
+      link = snapshot.val()
   link = snapshot.val()
     } else {
-      document.getElementById('videoplay').innerHTML = ``
+      document.getElementById('fotoronde').innerHTML = `flase`
       link = snapshot.val()
     }
 
