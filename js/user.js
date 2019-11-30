@@ -37,7 +37,7 @@ function assets() {
     let link = snapshot.val()
     console.log(link)
     if (link != 'false') {
-      document.getElementById('videoplay').innerHTML = `<video autoplay muted>
+      document.getElementById('videoplay').innerHTML = `<video autoplay>
     <source src="${link}" type="video/mp4">
     <source src="bg.png" type="video/ogg">
   </video>`
