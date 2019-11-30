@@ -10,6 +10,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .content {
@@ -24,7 +25,7 @@ body {
     flex-direction: column;
 }
 
-#team-images {
+.team-images {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -34,7 +35,7 @@ body {
     box-shadow: 0px 0px 500px 0px rgb(0, 0, 0);
 }
 
-#team-images:after {
+.team-images:after {
     content: "";
     width: 100%;
     height: 10px;
@@ -43,11 +44,11 @@ body {
     background: linear-gradient(90deg, #630503 0%, #bb0c09 50%, #630503 100%);
 }
 
-#team-images div {
+.team-images div {
     width: calc(100% / 3);
 }
 
-#team-images img {
+.team-images img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -115,6 +116,23 @@ body {
     color: white;
 }
 
+.videoplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.videoplay video{
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: red;
+    background: rgb(194, 34, 20);
+    background-image: url("../assets/texture-transparent.png"), linear-gradient(110deg, rgba(194, 34, 20, 1) 0%, rgba(88, 11, 9, 1) 100%);
+    background-size: cover;
+}
+
 /* ADMIN */
 #round-selector {
     display: flex;
@@ -174,10 +192,6 @@ body {
 
 .is-visible {
     display: block;
-}
-
-.videoplay{
-    position: absolute;
 }
 
 @-webkit-keyframes slide-right {

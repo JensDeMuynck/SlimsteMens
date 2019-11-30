@@ -40,13 +40,14 @@ function assets() {
     let link = snapshot.val()
     console.log(link)
     if (link != false) {
-      document.getElementById('videoplay').innerHTML = `<video autoplay>
+      document.getElementById('videoplay').innerHTML = `<video autoplay muted>
     <source src="${link}" type="video/mp4">
     <source src="bg.png" type="video/ogg">
   </video>`
   link = snapshot.val()
     }else {
       console.log('test')
+      document.getElementById('videoplay').innerHTML = ``
       link = snapshot.val()
     }
 
