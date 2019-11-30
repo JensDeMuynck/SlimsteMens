@@ -19,6 +19,11 @@ function addRound(round){
     document.getElementById('BtnTree').style.display = "none";
     document.getElementById('roundThreePuzzels').style.display = "none";
   }
+  if(round == 'Four') {
+    document.getElementById('roundFourImages').style.display = "block";
+  }else {
+    document.getElementById('roundFourImages').style.display = "none";
+  }
  
 };
 
