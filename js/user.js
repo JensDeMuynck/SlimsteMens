@@ -43,6 +43,7 @@ function assets() {
   </video>`
   link = snapshot.val()
     } else {
+      document.getElementById('videoplay').innerHTML = ``
       link = snapshot.val()
     }
 
