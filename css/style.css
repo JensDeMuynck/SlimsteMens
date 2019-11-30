@@ -176,6 +176,10 @@ body {
     display: block;
 }
 
+.videoplay{
+    position: absolute;
+}
+
 @-webkit-keyframes slide-right {
     0% {
         -webkit-transform: translateX(-50px);

@@ -17,10 +17,6 @@ function points() {
   let points = db.ref('teams');
   points.on('value', function (snapshot) {
     let data = snapshot.val()
-
-    // document.getElementById('teamTree').innerHTML = snapshot.val().teamTree.name
-    // document.getElementById('teamTreeScore').innerHTML = snapshot.val().teamTree.points
-
     let teampoints = document.getElementsByClassName('points');
 
     for (let i = 0; i < teampoints.length; i++) {
@@ -37,11 +33,32 @@ function points() {
   console.log(round)
 }
 
+function assets() {
+  let asset = db.ref('assetsurlVideo');
+  console.log(asset)
+  asset.on('value', function (snapshot) {
+    let link = snapshot.val()
+    console.log(link)
+    if (link != false) {
+      document.getElementById('videoplay').innerHTML = `<video autoplay>
+    <source src="${link}" type="video/mp4">
+    <source src="bg.png" type="video/ogg">
+  </video>`
+  link = snapshot.val()
+    }else {
+      console.log('test')
+      link = snapshot.val()
+    }
+
+  })
+}
+
 let state = db.ref('state');
 state.on('value', function (snapshot) {
   let stateVal = snapshot.val()
   if (stateVal == true) {
     points();
+    assets();
   } else {
     stateVal = snapshot.val()
   }
