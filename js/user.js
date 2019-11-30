@@ -35,13 +35,14 @@ function assets() {
   let asset = db.ref('assetsurlVideo');
   asset.on('value', function (snapshot) {
     let link = snapshot.val()
-    if (link != false) {
+    console.log(link)
+    if (link != 'false') {
       document.getElementById('videoplay').innerHTML = `<video autoplay muted>
     <source src="${link}" type="video/mp4">
     <source src="bg.png" type="video/ogg">
   </video>`
   link = snapshot.val()
-    }else {
+    } else {
       link = snapshot.val()
     }
 
