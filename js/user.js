@@ -36,7 +36,7 @@ function assets() {
   asset.on('value', function (snapshot) {
     let link = snapshot.val()
     if (link != false) {
-      document.getElementById('videoplay').innerHTML = `<video autoplay>
+      document.getElementById('videoplay').innerHTML = `<video autoplay muted>
     <source src="${link}" type="video/mp4">
     <source src="bg.png" type="video/ogg">
   </video>`
