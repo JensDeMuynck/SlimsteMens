@@ -1,5 +1,16 @@
 function addRound(round){
   db.ref('round').set(round)
+  if(round == 'one') {
+    document.getElementById('BtnOne').style.display = "block";
+  }else {
+    document.getElementById('BtnOne').style.display = "none";
+  }
+  
+  
+  if (round == 'Two') {
+    document.getElementById('Btn').style.display = "block";
+    
+  }
 };
 
 document.getElementById('RondeOne').addEventListener('click',function(){
