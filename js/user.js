@@ -83,7 +83,7 @@ state.on('value', function (snapshot) {
   let stateVal = snapshot.val()
   if (stateVal == true) {
     points();
-    // assets();
+    assets();
     assetImage();
   } else {
     stateVal = snapshot.val()
