@@ -14,6 +14,6 @@ function selectImage(e) {
   db.ref('assetsurlPictures').set(e.target.innerHTML)
 }
 
-for(let i = 0; i < assets.length ; i++) {
+for(let i = 0; i < assetsSecond.length ; i++) {
   assetsSecond[i].addEventListener('click', selectImage)
 }
