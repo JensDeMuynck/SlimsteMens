@@ -123,7 +123,7 @@ body {
     z-index: 10;
 }
 
-.videoplay video{
+.videoplay video, .videoplay img{
     width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -132,6 +132,7 @@ body {
     background-image: url("../assets/texture-transparent.png"), linear-gradient(110deg, rgba(194, 34, 20, 1) 0%, rgba(88, 11, 9, 1) 100%);
     background-size: cover;
 }
+
 
 /* ADMIN */
 #round-selector {

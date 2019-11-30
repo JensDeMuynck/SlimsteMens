@@ -62,12 +62,29 @@ function assets() {
   })
 }
 
+function assetImage(){
+  let assetimage = db.ref('assetsurlPictures');
+  assetimage.on('value', function (snapshot) {
+    let link = snapshot.val()
+    console.log(link)
+    if (link != 'false') {
+      document.getElementById('fotoronde').innerHTML = `<img src="${link}">`
+  link = snapshot.val()
+    } else {
+      document.getElementById('videoplay').innerHTML = ``
+      link = snapshot.val()
+    }
+
+  })
+}
+
 let state = db.ref('state');
 state.on('value', function (snapshot) {
   let stateVal = snapshot.val()
   if (stateVal == true) {
     points();
-    assets();
+    // assets();
+    assetImage();
   } else {
     stateVal = snapshot.val()
   }

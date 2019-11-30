@@ -32,6 +32,7 @@ let antwoord3 = document.getElementById('antwoord3')
 puzzel.on('value', function (snapshot) {
   let sortPuzzel = snapshot.val()
   color('puzzelbox', "transparent")
+  console.log(sortPuzzel)
   antwoord1.innerHTML = ""
   antwoord2.innerHTML = ""
   antwoord3.innerHTML = ""
