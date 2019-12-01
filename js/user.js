@@ -86,6 +86,33 @@ function assetImage(){
   })
 }
 
+function answers() {
+  let answerOne = db.ref('anwser/BtnOne');
+  console.log(answerOne)
+  answerOne.on('value', function (snapshot) {
+    console.log(snapshot.val())
+    document.getElementById('a1').innerHTML = `${snapshot.val()}`
+  })
+  let answerTwo = db.ref('anwser/BtnTwo');
+  answerTwo.on('value', function (snapshot) {
+    document.getElementById('a2').innerHTML = `${snapshot.val()}`
+  })
+  let answerThree = db.ref('anwser/BtnThree');
+  answerThree.on('value', function (snapshot) {
+    document.getElementById('a3').innerHTML = `${snapshot.val()}`
+  })
+  let answerFour = db.ref('anwser/BtnFour');
+  answerFour.on('value', function (snapshot) {
+    document.getElementById('a4').innerHTML = `${snapshot.val()}`
+  })
+  let answerFive = db.ref('anwser/BtnFive');
+  answerFive.on('value', function (snapshot) {
+    document.getElementById('a5').innerHTML = `${snapshot.val()}`
+  })
+  // answers()
+
+}
+
 let state = db.ref('state');
 state.on('value', function (snapshot) {
   let stateVal = snapshot.val()
@@ -93,6 +120,7 @@ state.on('value', function (snapshot) {
     points();
     assets();
     assetImage();
+    answers()
   } else {
     stateVal = snapshot.val()
   }

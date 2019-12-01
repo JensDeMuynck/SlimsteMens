@@ -11,6 +11,6 @@
   color: transparent;
 }
 
-#roundOneQuiz, #roundTwoAssets, #roundThreePuzzels, #roundFourImages{
+#roundOneQuiz, #roundTwoAssets, #roundThreePuzzels, #roundFourImages, #roundFiveMind{
   display: none;
 }

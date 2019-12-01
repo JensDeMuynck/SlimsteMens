@@ -133,6 +133,10 @@ body {
     background-size: cover;
 }
 
+#mind1{
+    position: absolute;
+}
+
 
 /* ADMIN */
 #round-selector {
