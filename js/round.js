@@ -28,21 +28,21 @@ function addRound(round){
     document.getElementById('BtnOne').style.display = "none";
     document.getElementById('roundFourImages').style.display = "none";
   }
-  if(round == 'Five') {
-    document.getElementById('BtnOne').style.display = "block";
-    document.getElementById('BtnTwo').style.display = "block";
-    document.getElementById('BtnTree').style.display = "block";
-    document.getElementById('BtnFour').style.display = "block";
-    document.getElementById('BtnFive').style.display = "block";
-    document.getElementById('roundFiveMind').style.display = "block";
-  }else {
-    document.getElementById('BtnOne').style.display = "none";
-    document.getElementById('BtnTwo').style.display = "none";
-    document.getElementById('BtnTree').style.display = "none";
-    document.getElementById('BtnFour').style.display = "none";
-    document.getElementById('BtnFive').style.display = "none";
-    document.getElementById('roundFiveMind').style.display = "none";
-  }
+  // if(round == 'Five') {
+  //   document.getElementById('BtnOne').style.display = "block";
+  //   document.getElementById('BtnTwo').style.display = "block";
+  //   document.getElementById('BtnTree').style.display = "block";
+  //   document.getElementById('BtnFour').style.display = "block";
+  //   document.getElementById('BtnFive').style.display = "block";
+  //   document.getElementById('roundFiveMind').style.display = "block";
+  // }else {
+  //   document.getElementById('BtnOne').style.display = "none";
+  //   document.getElementById('BtnTwo').style.display = "none";
+  //   document.getElementById('BtnTree').style.display = "none";
+  //   document.getElementById('BtnFour').style.display = "none";
+  //   document.getElementById('BtnFive').style.display = "none";
+  //   document.getElementById('roundFiveMind').style.display = "none";
+  // }
  
 };
 
