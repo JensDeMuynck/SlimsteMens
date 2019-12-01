@@ -109,7 +109,6 @@ function answers() {
   answerFive.on('value', function (snapshot) {
     document.getElementById('a5').innerHTML = `${snapshot.val()}`
   })
-  // answers()
 
 }
 

@@ -8,7 +8,7 @@ function addRound(round){
   document.getElementById('roundOneQuiz').style.display = "none";
   document.getElementById('roundTwoAssets').style.display = "none";
   document.getElementById('roundThreePuzzels').style.display = "none";
-  document.getElementById('roundThreePuzzels').style.display = "none";
+  document.getElementById('roundFourPuzzels').style.display = "none";
   document.getElementById('roundFiveMind').style.display = "none";
   if(round == 'one') {
     document.getElementById('BtnOne').style.display = "block";
