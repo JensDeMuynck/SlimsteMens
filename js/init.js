@@ -21,6 +21,7 @@ document.getElementById('names').addEventListener('click', function () {
 
     let points = db.ref('teams');
     points.on('value', function (snapshot) {
+        console.log(document.getElementById('teamOneScore'));
         document.getElementById('teamOneScore').innerHTML = snapshot.val().teamOne.points
         document.getElementById('teamTwoScore').innerHTML = snapshot.val().teamTwo.points
         document.getElementById('teamTreeScore').innerHTML = snapshot.val().teamTree.points

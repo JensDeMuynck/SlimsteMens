@@ -25,7 +25,7 @@ form {
     content: "";
     position: absolute;
     right: 11px;
-    top: 11px;
+    bottom: 11px;
     width: 20px;
     height: 20px;
     border-radius: 3px;
