@@ -22,6 +22,12 @@ function showRound(round) {
   } else {
     document.getElementById('content4').style.display = "none"
   }
+
+  if (round == "Five") {
+    document.getElementById('content5').style.display = "flex"
+  } else {
+    document.getElementById('content5').style.display = "none"
+  }
 }
 
 function points() {
@@ -73,7 +79,7 @@ function assetImage(){
       link = snapshot.val()
   link = snapshot.val()
     } else {
-      document.getElementById('fotoronde').innerHTML = `flase`
+      document.getElementById('fotoronde').innerHTML = ``
       link = snapshot.val()
     }
 

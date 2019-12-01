@@ -1,9 +1,11 @@
 function addRound(round){
   db.ref('round').set(round)
-  if(round == 'one' || round == 'Four') {
+  if(round == 'one') {
     document.getElementById('BtnOne').style.display = "block";
+    document.getElementById('roundOneQuiz').style.display = "block";
   }else {
     document.getElementById('BtnOne').style.display = "none";
+    document.getElementById('roundOneQuiz').style.display = "none";
   }
   if (round == 'Two') {
     document.getElementById('BtnTwo').style.display = "block";
@@ -20,9 +22,24 @@ function addRound(round){
     document.getElementById('roundThreePuzzels').style.display = "none";
   }
   if(round == 'Four') {
+    document.getElementById('BtnOne').style.display = "block";
     document.getElementById('roundFourImages').style.display = "block";
   }else {
+    document.getElementById('BtnOne').style.display = "none";
     document.getElementById('roundFourImages').style.display = "none";
+  }
+  if(round == 'Five') {
+    document.getElementById('BtnOne').style.display = "block";
+    document.getElementById('BtnTwo').style.display = "block";
+    document.getElementById('BtnTree').style.display = "block";
+    document.getElementById('BtnFour').style.display = "block";
+    document.getElementById('BtnFive').style.display = "block";
+  }else {
+    document.getElementById('BtnOne').style.display = "none";
+    document.getElementById('BtnTwo').style.display = "none";
+    document.getElementById('BtnTree').style.display = "none";
+    document.getElementById('BtnFour').style.display = "none";
+    document.getElementById('BtnFive').style.display = "none";
   }
  
 };
