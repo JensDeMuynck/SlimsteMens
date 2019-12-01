@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ADMIN</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/admin.css">
     <script src="js/jens.js" defer></script>
+    <script src="https://kit.fontawesome.com/2565c051ce.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,11 +22,11 @@
     </div>
     <div id="nameBox">
         <label>Team 1</label>
-        <input id="teamOne" type="text" value="Anna">
+        <input id="teamOne" type="text" value="Anna"><br>
         <label>Team 2</label>
-        <input id="teamTwo" type="text" value="Eva">
+        <input id="teamTwo" type="text" value="Eva"><br>
         <label>Team 3</label>
-        <input id="teamTree" type="text" value="Fe">
+        <input id="teamTree" type="text" value="Fe"><br>
         <button id="names">Place names</button>
     </div>
     <div id="buttons">
@@ -36,32 +37,56 @@
         <button class="buttons" id="BtnFive">+50</button>
     </div>
     <div id="roundOneQuiz">
-        <button class="assetsButtons">./assets/dreamingKitty.mp4</button>
-        <button class="assetsButtons">false</button><br>
-        <button class="assetsSecondButtons">./assets/katsneeuw.jpg</button>
-        <button class="assetsSecondButtons" id="false">false</button><br>
-        <button class="assetsSecondButtons">./assets/boom.PNG</button>
-        <button class="assetsSecondButtons" id="false">false</button><br>
-        <button class="assetsSecondButtons">./assets/rebus.jpg</button>
-        <button class="assetsSecondButtons" id="false">false</button><br>
+        <div class="roundOneWrap">
+            <div>
+                <button class="assetsButtons">./assets/dreamingKitty.mp4</button>
+                <button class="assetsButtons">false</button>
+            </div>
+            <div>
+                <button class="assetsSecondButtons">./assets/katsneeuw.jpg</button>
+                <button class="assetsSecondButtons">false</button>
+            </div>
+            <div>
+                <button class="assetsSecondButtons">./assets/boom.PNG</button>
+                <button class="assetsSecondButtons">false</button>
+            </div>
+            <div>
+                <button class="assetsSecondButtons">./assets/rebus.jpg</button>
+                <button class="assetsSecondButtons">false</button>
+            </div>
+        </div>
     </div>
     <div id="roundTwoAssets">
         <button class="assetsButtons">false</button>
-        <button class="assetsButtons" id="video1">./assets/video1.mp4</button>
-        <button class="answerBtn1">afkomstig van de zon</button>
-        <button class="answerBtn2">Invloed van de maanfase </button>
-        <button class="answerBtn3">Donker</button>
-        <button class="answerBtn4">Vanaf half augustus</button>
-        <button class="assetsButtons" id="video2">./assets/video2.mp4</button>
-        <button class="answerBtn1">Studio 100</button>
-        <button class="answerBtn2">Acteur</button>
-        <button class="answerBtn3">Victor</button>
-        <button class="answerBtn4">K3</button>
-        <button class="assetsButtons" id="video3">./assets/video3.mp4</button>
-        <button class="answerBtn1">Kerstboom</button>
-        <button class="answerBtn2">De kerk en het kerstverhaal </button>
-        <button class="answerBtn3">Cadeaus onder de boom</button>
-        <button class="answerBtn4">kerstmarkten</button>
+        <div class="roundTwoWrap">
+            <div>
+                <button class="assetsButtons" id="video1">./assets/video1.mp4</button>
+                <div class="answers">
+                    <button class="answerBtn1">afkomstig van de zon</button>
+                    <button class="answerBtn2">Invloed van de maanfase </button>
+                    <button class="answerBtn3">Donker</button>
+                    <button class="answerBtn4">Vanaf half augustus</button>
+                </div>
+            </div>
+            <div>
+                <button class="assetsButtons" id="video2">./assets/video2.mp4</button>
+                <div class="answers">
+                    <button class="answerBtn1">Studio 100</button>
+                    <button class="answerBtn2">Acteur</button>
+                    <button class="answerBtn3">Victor</button>
+                    <button class="answerBtn4">K3</button>
+                </div>
+            </div>
+            <div>
+                <button class="assetsButtons" id="video3">./assets/video3.mp4</button>
+                <div class="answers">
+                    <button class="answerBtn1">Kerstboom</button>
+                    <button class="answerBtn2">De kerk en het kerstverhaal </button>
+                    <button class="answerBtn3">Cadeaus onder de boom</button>
+                    <button class="answerBtn4">kerstmarkten</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="roundThreePuzzels">
         <button class="puzzel">puzzel1</button>
@@ -88,7 +113,7 @@
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_1/8.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_1/9.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_1/10.jpg</button>
-        <button class="assetsSecondButtons" id="false">false</button><br>
+        <button class="assetsSecondButtons">false</button><br>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_2/1.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_2/2.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_2/3.jpg</button>
@@ -99,7 +124,7 @@
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_2/8.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_2/9.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_2/10.jpg</button>
-        <button class="assetsSecondButtons" id="false">false</button><br>
+        <button class="assetsSecondButtons">false</button><br>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_3/1.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_3/2.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_3/3.jpg</button>
@@ -110,7 +135,7 @@
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_3/8.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_3/9.jpg</button>
         <button class="assetsSecondButtons">./assets/pictureRound/ronde_3/10.jpg</button>
-        <button class="assetsSecondButtons" id="false">false</button><br>
+        <button class="assetsSecondButtons">false</button><br>
     </div>
     <div id="roundFiveMind">
         <button class="assetsButtons">false</button>
@@ -158,20 +183,18 @@
             <div id="slider" class="slide-right"></div>
         </a>
     </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/round.js"></script>
+    <script src="./js/addPoints.js"></script>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/assets.js"></script>
+    <script src="./js/puzzel.js"></script>
+    <script src="./js/anwser.js"></script>
 </body>
-
-
-<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
-<script src="./js/firebase.js"></script>
-<script src="./js/init.js"></script>
-<script src="./js/round.js"></script>
-<script src="./js/addPoints.js"></script>
-<script src="./js/countdown.js"></script>
-<script src="./js/assets.js"></script>
-<script src="./js/puzzel.js"></script>
-<script src="./js/anwser.js"></script>
-
-
 </html>
