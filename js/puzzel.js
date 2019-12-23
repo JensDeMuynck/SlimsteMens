@@ -48,15 +48,15 @@ puzzel.on('value', function (snapshot) {
 namePuzzel.on('value', function (snapshot) {
   let nameFound = snapshot.val()
   if(nameFound == 'kerstbal' || nameFound =='openhaard' || nameFound=='ster'){
-    antwoord1.innerHTML=nameFound;
-    color('puzzelmix1', 'green');
+    antwoord1.innerHTML=`<div class="point"><span class="bol pink">20</span> ${nameFound}</p> `;
+    color('puzzelmix1', '#C70039');
   }
   if(nameFound == 'rendier' || nameFound =='winter' || nameFound=='engel'){
-    antwoord2.innerHTML=nameFound;
-    color('puzzelmix2', 'blue');
+    antwoord2.innerHTML=`<div class="point"><span class="bol pinkpurple">20</span> ${nameFound}</p> `;
+    color('puzzelmix2', '#900C3F');
   }
   if(nameFound == 'kerstman' || nameFound =='vuurwerk' || nameFound=='kerststal'){
-    antwoord3.innerHTML=nameFound;
-    color('puzzelmix3', 'yellow');
+    antwoord3.innerHTML=`<div class="point"><span class="bol purple">20</span> ${nameFound}</p> `;
+    color('puzzelmix3', '#581845');
   }
 })

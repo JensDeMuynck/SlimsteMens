@@ -1,3 +1,62 @@
 .puzzels {
   display:none;
+  width: 70%
+}
+
+.puzzelrows {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+  margin-left: 10%;
+}
+
+.puzzelbox {
+  width: 20%;
+  padding: 70px 0;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(58, 10, 10);
+  color: white;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.point{
+  color: white;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.bol {
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgb(58, 10, 10);
+
+}
+
+.pink{
+  background-color: #C70039;
+}
+
+.pinkpurple {
+  background-color: #900C3F;
+}
+
+.purple {
+  background: #581845;
+}
+
+.antwoorden{
+  width: 20%;
+  margin-left: 10%;
+}
+
+.antwoorden h2 {
+  margin: 100px 0;
+
+}
+
+.antwoordbox{
+  display: flex;
 }
