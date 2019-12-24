@@ -187,7 +187,15 @@ button:focus {outline:0;}
 }
 
 .roundOneWrap>div:nth-child(4){
+    background-image: url('../assets/thumbs/kogelvis.png');
+}
+
+.roundOneWrap>div:nth-child(5){
     background-image: url('../assets/thumbs/rebus.jpg');
+}
+
+.roundOneWrap>div:nth-child(6){
+    background-image: url('../assets/thumbs/tango.png');
 }
 
 /* RONDE 2 */
