@@ -133,6 +133,26 @@ body {
     background-size: cover;
 }
 
-#mind1{
+
+.awnserbox{
+    color: white;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    text-transform: uppercase;
     position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.awnserbox h2{
+    margin-bottom: 70px;
+}
+
+.lowest{
+    position: absolute;
+    bottom: 15%;
+}
+
+.leftpoints{
+    width: 50%;
+    margin-left: 45%;
 }

@@ -1,4 +1,6 @@
 function countPlus(teamnumber, points) {
+    var audio = new Audio('./../assets/correct.m4a');
+    audio.play();
     let point;
     let getPoints = db.ref('teams/' + teamnumber + '/points');
     getPoints.on('value', function (snapshot) {

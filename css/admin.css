@@ -159,6 +159,8 @@ button:focus {outline:0;}
     z-index: 2;
 }
 
+
+
 .roundOneWrap>div>button:nth-child(2):hover{
     transform: translateY(40%);
 }
@@ -230,6 +232,16 @@ button:focus {outline:0;}
     flex-direction: row;
     width: 25%;
     margin: 30px;
+}
+#roundTwoAssets div:nth-child(2) .assetsButtons {
+    background-image: url("./../assets/panda.png");
+}
+#roundTwoAssets div:nth-child(1) .assetsButtons {
+    background-image: url("./../assets/cat.png");
+}
+
+#roundTwoAssets div:nth-child(3) .assetsButtons {
+    background-image: url("./../assets/horse.png");
 }
 
 #roundTwoAssets div .assetsButtons {
@@ -334,4 +346,190 @@ button:focus {outline:0;}
     color: transparent;
     border: none;
     z-index: 2;
+}
+
+.falseBtn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translateY(50%);
+    transition: transform 0.2s;
+    background: #ed5e68 url('../assets/times.svg');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: none;
+    z-index: 2;
+    position: relative;
+    left: 48.5%;
+}
+
+#roundFive {
+    background-color: gray;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: 15%;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.buttonbox {
+    width: 33.333%;
+    margin: 0;
+}
+
+.buttonbox div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.buttonbox button {
+    height: 100px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 20%;
+}
+
+.buttonbox>button{
+    color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+}
+.buttonbox:nth-child(1) .assetsButtons{
+    background-image: url('./../assets/thumbs/Niko.jpg');
+}
+.buttonbox:nth-child(2) .assetsButtons{
+    background-image: url('./../assets/thumbs/Home.jpg');
+}
+.buttonbox:nth-child(3) .assetsButtons{
+    background-image: url('./../assets/thumbs/DeVijf.jpg');
+}
+
+
+.buttonbox div button{
+    /* border: 1px solid black; */
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+
+.buttonbox:nth-child(1) div button{
+    background-color: #808B96;
+    color: white;
+}
+.buttonbox:nth-child(2) div button{
+    background-color: #E5E7E9;
+}
+.buttonbox:nth-child(3) div button{
+    background-color: #2E4053;
+    color: white;
+}
+
+.buttonbox div button:hover {
+    background-color: #EC7063;
+}
+
+.roundWrap .gallery button{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(1){
+    background-image: url('./../assets/pictureRound/ronde_1/1.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(2){
+    background-image: url('./../assets/pictureRound/ronde_1/2.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(3){
+    background-image: url('./../assets/pictureRound/ronde_1/3.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(4){
+    background-image: url('./../assets/pictureRound/ronde_1/4.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(5){
+    background-image: url('./../assets/pictureRound/ronde_1/5.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(6){
+    background-image: url('./../assets/pictureRound/ronde_1/6.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(7){
+    background-image: url('./../assets/pictureRound/ronde_1/7.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(8){
+    background-image: url('./../assets/pictureRound/ronde_1/8.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(9){
+    background-image: url('./../assets/pictureRound/ronde_1/9.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(1) .gallery button:nth-child(10){
+    background-image: url('./../assets/pictureRound/ronde_1/10.jpg');
+}
+
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(1){
+    background-image: url('./../assets/pictureRound/ronde_2/1.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(2){
+    background-image: url('./../assets/pictureRound/ronde_2/2.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(3){
+    background-image: url('./../assets/pictureRound/ronde_2/3.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(4){
+    background-image: url('./../assets/pictureRound/ronde_2/4.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(5){
+    background-image: url('./../assets/pictureRound/ronde_2/5.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(6){
+    background-image: url('./../assets/pictureRound/ronde_2/6.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(7){
+    background-image: url('./../assets/pictureRound/ronde_2/7.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(8){
+    background-image: url('./../assets/pictureRound/ronde_2/8.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(9){
+    background-image: url('./../assets/pictureRound/ronde_2/9.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(2) .gallery button:nth-child(10){
+    background-image: url('./../assets/pictureRound/ronde_2/10.jpg');
+}
+
+
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(1){
+    background-image: url('./../assets/pictureRound/ronde_3/1.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(2){
+    background-image: url('./../assets/pictureRound/ronde_3/2.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(3){
+    background-image: url('./../assets/pictureRound/ronde_3/3.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(4){
+    background-image: url('./../assets/pictureRound/ronde_3/4.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(5){
+    background-image: url('./../assets/pictureRound/ronde_3/5.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(6){
+    background-image: url('./../assets/pictureRound/ronde_3/6.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(7){
+    background-image: url('./../assets/pictureRound/ronde_3/7.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(8){
+    background-image: url('./../assets/pictureRound/ronde_3/8.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(9){
+    background-image: url('./../assets/pictureRound/ronde_3/9.jpg');
+}
+.roundFourWrap .roundWrap:nth-child(3) .gallery button:nth-child(10){
+    background-image: url('./../assets/pictureRound/ronde_3/10.jpg');
 }
